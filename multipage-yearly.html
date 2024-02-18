@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly plan</title>
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="multipage-yearly.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        
+        <div class="first">
+            <!--<div>
+                <img src="bg-sidebar-desktop.svg" alt="">
+            </div>-->
+            <div class="flex">
+                <div class="number">1</div>
+                <div class="step-container">
+                    <p class="step">STEP 1</p>
+                    <p class="step-name">YOUR INFO</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="number" id="number1">2</div>
+                <div class="step-container">
+                    <p class="step">STEP 2</p>
+                    <p class="step-name">SELECT PLAN</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="number">3</div>
+                <div class="step-container">
+                    <p class="step">STEP 3</p>
+                    <p class="step-name">ADD-ONS</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="number">4</div>
+                <div class="step-container">
+                    <p class="step">STEP 4</p>
+                    <p class="step-name">SUMMARY</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="second">
+            <h1>Select your plan</h1>
+            <p class="small">You have the option of monthly or yearly billing.</p>
+
+            <div class="flex-container">
+                <div class="sub-container" id="option1" tabindex="0" onclick="this.focus()" onblur="this.classList.remove('focus')">
+                    <img src="icon-arcade.svg" alt="arcade">
+                    <div>
+                        <p class="plan">Arcade</p>
+                        <p class="amount" id="year1">$90/yr</p>
+                        <span class="span" id="span1">2 months free</span>
+                    </div>
+                </div>
+
+                <div class="sub-container" id="option2" tabindex="0" onclick="this.focus()" onblur="this.classList.remove('focus')">
+                    <img src="icon-advanced.svg" alt="advanced">
+                    <div>
+                        <p class="plan">Advanced</p>
+                        <p class="amount" id="year2">$120/yr</p>
+                        <span class="span" id="span2">2 months free</span>
+                    </div>
+                </div>
+
+                <div class="sub-container" id="option3" tabindex="0" onclick="this.focus()" onblur="this.classList.remove('focus')">
+                    <img src="icon-pro.svg" alt="arcade">
+                    <div>
+                        <p class="plan">Pro</p>
+                        <p class="amount" id="year3">$150/yr</p>
+                        <span class="span" id="span3">2 months free</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-container">
+                <span class="toggle-text" id="toggle1">Monthly</span>
+                <label class="toggle-label">
+                    <input type="checkbox" id="subscription-toggle" onclick="toggleSubscription('monthly')">
+                    <span class="slider"></span>
+                    
+                </label>
+                <span class="toggle-text" id="toggle2">Yearly</span>
+            </div>
+
+            <div class="last">
+                <p class="link"><a href="multipage.html">Go Back</a></p>
+                <button id="next">Next Step</button>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="multipage-yearly.js"></script>
+</body>
+</html>

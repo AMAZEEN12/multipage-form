@@ -1,0 +1,234 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 100%, 97%);
+}
+main{
+    background-color: white;
+    width: 47vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsl(0, 1%, 44%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+.first{
+    background-image: url(bg-sidebar-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 20px;
+    border: none;
+    top: 20px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 5px -15px 12px;
+
+}
+.number{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 800;
+}
+#number1{
+   background-color: hsl(206, 94%, 87%);
+   color: hsl(213, 96%, 18%); 
+}
+.step-container{
+    margin-top: 20px;
+    padding-right: 30px;
+}
+.step{
+    font-size: 2px;
+    font-weight: 400;
+    color: hsl(206, 94%, 87%);
+    margin-bottom: -10px;
+}
+.step-name{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: white;
+}
+.second{
+    top: 80px;
+    right: -12vw;
+    position: absolute;
+    padding: 40px;
+    width: 35vw;
+}
+h1{
+    color: hsl(213, 96%, 18%);
+    position: absolute;
+    top: -45px;
+}
+.small{
+    color: hsl(231, 11%, 63%);
+    top: 15px;
+    margin-right: -80px;
+    font-size: 8px;
+    font-weight: 400;
+    position: absolute;
+}
+.form{
+    position: relative;
+    top: 25px;
+    margin-bottom: 15px;
+}
+.form1{
+    position: relative;
+    top: 35px;
+    margin-bottom: 15px;
+}
+.form2{
+    position: relative;
+    top: 50px;
+}
+button{
+    position: relative;
+    top: 105px;
+    right: -13vw;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+label{
+    color: hsl(213, 96%, 18%);
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 250px;
+    padding: 7px 20px;
+    border: 2px solid hsl(231, 11%, 63%);
+    border-radius: 5px;
+    color: hsl(213, 96%, 18%);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid hsl(243, 100%, 62%);
+    background: transparent;
+}
+::placeholder{
+    color: hsl(231, 11%, 63%);
+}
+span{
+    margin-right: 170px;
+    font-size: 10px;
+    color: hsl(354, 84%, 57%);
+}
+@media screen and (max-width: 385px) {
+   main{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: -2vh;
+    
+   } 
+   body{
+    margin: 40px;
+    background-image: url(bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    overflow-x: hidden;
+    }
+   .first{
+    background-image: none;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    top: 35px;
+    position: relative;
+   }
+   .number{
+    position: absolute;
+    top: -45vh;
+   }
+   .flex{
+    margin: 0 10px 0 40px;
+    text-align: center;
+   }
+   .step-container{
+    display: none;
+   }
+   .second{
+    right: 30vw;
+    top: 10vh;
+   }
+   h1{
+    width: 300px;
+   }
+   label{
+    white-space: nowrap;
+   }
+   input{
+    width: 230px;
+    padding: 10px;
+   }
+   ::placeholder{
+    margin-left: -50px;
+   }
+   #button{
+    top: 30px;
+    right: -70vw;
+   }
+   .button-div{
+    background-color: white;
+    width: 400px;
+    height: 20vh;
+    position: relative;
+    top: 25vh;
+    margin-left: -22vw;
+
+   }
+   span{
+    margin-right: -120px;
+   }
+}
+@media screen and (min-width: 1430px) {
+    main{
+        height: 50vh;
+    }
+    button{
+        top: 155px;
+    }
+    span{
+        margin-right: 230px;
+    }
+}

@@ -1,0 +1,173 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 100%, 97%);
+}
+main{
+    background-color: white;
+    width: 52vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsl(0, 1%, 44%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+.first{
+    background-image: url(bg-sidebar-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 20px;
+    border: none;
+    top: 20px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 5px -15px 12px;
+
+}
+.number{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+}
+#number1{
+   background-color: hsl(206, 94%, 87%);
+   color: hsl(213, 96%, 18%); 
+}
+.step-container{
+    margin-top: 20px;
+    padding-right: 30px;
+}
+.step{
+    font-size: 2px;
+    font-weight: 400;
+    color: hsl(206, 94%, 87%);
+    margin-bottom: -10px;
+}
+.step-name{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: white;
+}
+.second{
+    top: 80px;
+    right: -5vw;
+    position: absolute;
+    padding: 40px;
+    width: 35vw;
+    text-align: center;
+}
+.second img{
+    display: block;
+    margin-left: auto;
+    margin-right: 14vw;
+    width: 20%;    
+}
+h2{
+    font-size: 40px;
+}
+.second p{
+    font-size: 16px;
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+    opacity: 0.8;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 385px) {
+    main{
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     height: 75vh;
+     margin-top: -5vh;
+     
+    } 
+    body{
+     margin: 40px;
+     margin-bottom: 0;
+     background-image: url(bg-sidebar-mobile.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 300px;
+     overflow-x: hidden;
+     }
+    .first{
+     background-image: none;
+     width: 300px;
+     display: flex;
+     flex-direction: row;
+     height: 20vh;
+     top: 35px;
+     position: relative;
+    }
+    .number{
+     position: absolute;
+     top: -40vh;
+    }
+    .flex{
+     margin: 0 10px 0 40px;
+     text-align: center;
+    }
+    .step-container{
+     display: none;
+    }
+    .second{
+        top: 5vh;
+        right: 25vw;
+    }
+    .second img{
+        display: block;
+        width: 50%;
+        margin-left: 20vw;
+        margin-right: auto;
+    }
+    h2{
+        width: 300px;
+        margin-left: -30px;
+        font-size: 32px;
+    }
+    .second p{
+        width: 250px;
+        margin-left: -10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1430px) {
+    main{
+        height: 50vh;
+    }
+    button{
+        top: 30px;
+    }
+}

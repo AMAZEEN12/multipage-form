@@ -1,0 +1,298 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 100%, 97%);
+}
+main{
+    background-color: white;
+    width: 52vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hsl(0, 1%, 44%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+.first{
+    background-image: url(bg-sidebar-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 20px;
+    border: none;
+    top: 20px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 5px -15px 12px;
+
+}
+.number{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+}
+#number1{
+   background-color: hsl(206, 94%, 87%);
+   color: hsl(213, 96%, 18%); 
+}
+.step-container{
+    margin-top: 20px;
+    padding-right: 30px;
+}
+.step{
+    font-size: 2px;
+    font-weight: 400;
+    color: hsl(206, 94%, 87%);
+    margin-bottom: -10px;
+}
+.step-name{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: white;
+}
+.second{
+    top: 80px;
+    right: -10vw;
+    position: absolute;
+    padding: 40px;
+    width: 35vw;
+}
+h1{
+    color: hsl(213, 96%, 18%);
+    position: absolute;
+    top: -45px;
+}
+.small{
+    color: hsl(231, 11%, 63%);
+    top: 15px;
+    margin-right: -80px;
+    font-size: 5px;
+    font-weight: 400;
+    position: absolute;
+}
+.form{
+    position: relative;
+    top: 25px;
+    right: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    width: 320px;
+    padding-left: 10px;
+}
+.form:hover{
+    border: 2px solid hsl(213, 96%, 18%);
+}
+button{
+    position: relative;
+    top: 95px;
+    right: -13vw;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+input[type='checkbox']{
+    padding: 7px 20px;
+    border: 2px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    color: hsl(213, 96%, 18%);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid hsl(213, 96%, 18%);
+}
+.heading{
+    font-size: 15px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 800;
+}
+.little{
+    font-size: 8px;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+}
+#little1{
+    margin-left: 50px;
+}
+#little2{
+    margin-left: 15px;
+}
+#little0{
+    margin-left: 22px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-right: 80px;
+}
+
+button{
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: -31vh;
+    margin-right: 18vw;
+}
+.link a{
+    font-size: 15px;
+    color: hsl(231, 11%, 63%);
+    text-decoration: none;
+    font-weight: 700;
+}
+.link a:hover{
+    color: hsl(213, 96%, 18%);
+}
+span{
+    position: absolute;
+    top: 50vh;
+    left: 18vw;
+}
+
+@media screen and (max-width: 385px) {
+    main{
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     height: 75vh;
+     margin-top: -5vh;
+     
+    } 
+    span{
+        left: 47vw;
+        top: 52vh;
+        white-space: nowrap;
+    }
+    body{
+     margin: 40px;
+     margin-bottom: 0;
+     background-image: url(bg-sidebar-mobile.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 300px;
+     overflow-x: hidden;
+     }
+    .first{
+     background-image: none;
+     width: 300px;
+     display: flex;
+     flex-direction: row;
+     height: 20vh;
+     top: 35px;
+     position: relative;
+    }
+    .number{
+     position: absolute;
+     top: -40vh;
+    }
+    .flex{
+     margin: 0 10px 0 40px;
+     text-align: center;
+    }
+    .step-container{
+     display: none;
+    }
+    .second{
+     right: 25vw;
+    }
+    input{
+     width: 230px;
+     padding: 10px 5px;
+    }
+    .lil{
+        right: 4vw;
+        padding-left: 0;
+        white-space: nowrap;
+        position: absolute;
+        font-size: 8px;
+    }
+    .form{
+        width: 250px;
+        right: 5px;
+        text-align: left;   
+    }
+    input[type='checkbox']{
+        margin-left: -100px;
+    }
+    .heading{
+        font-size: 12px;
+    }
+    .little{
+        
+        font-weight: 400;
+    }
+    .div{
+        margin-left: -120px;
+        position: relative;
+        white-space: nowrap;
+        
+    }
+    
+    .last{
+        background-color: white;
+        margin-top: 150px;
+        width: 380px;
+        height: 20vh;
+        margin-left: -80px;
+        overflow-x: hidden;
+    }
+    .link{
+        margin-left: 25px;
+    }
+    button{
+        margin-right: 55px;
+        top: 80px;
+        width: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1430px) {
+    main{
+        height: 50vh;
+    }
+    button{
+        top: 185px;
+    }
+    span{
+        top: 27vh;
+    }
+}
